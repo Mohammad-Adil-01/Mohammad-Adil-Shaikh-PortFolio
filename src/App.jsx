@@ -442,18 +442,6 @@ function App() {
                 </div>
               </div>
             )}
-
-            {/* Review section Start From Here */}
-            {/* {showContent === "resume" && (
-              <div className="showReviews">
-                <div className="reviewheading">
-                  <h1 className="review-title">Review</h1>
-                  <span>
-                    <img src={review} width="35px" />
-                  </span>
-                </div>
-              </div>
-            )} */}
           </div>
         </div>
       </div>
