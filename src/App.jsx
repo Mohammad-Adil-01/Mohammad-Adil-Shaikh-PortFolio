@@ -74,7 +74,7 @@ function App() {
                 </a>
               </h4>
               <h4>
-                <a href="https://github.com/Mohammad-Adil-01">
+                <a href="https://www.linkedin.com/in/mohammad-adil-shaikh-166822301/">
                   <img src={linkedIn} width="35px" className="social-media-img" />
                 </a>
               </h4>
