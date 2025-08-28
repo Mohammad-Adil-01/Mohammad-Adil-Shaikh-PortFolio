@@ -70,22 +70,22 @@ function App() {
             <div className="social-media">
               <h4>
                 <a href="https://github.com/Mohammad-Adil-01">
-                  <img src={github} width="35px" />
+                  <img src={github} width="35px" className="social-media-img" />
                 </a>
               </h4>
               <h4>
                 <a href="https://github.com/Mohammad-Adil-01">
-                  <img src={linkedIn} width="35px" />
+                  <img src={linkedIn} width="35px" className="social-media-img" />
                 </a>
               </h4>
               <h4>
                 <a href="https://x.com/Adil2486">
-                  <img src={x} width="35px" />
+                  <img src={x} width="35px" className="social-media-img" />
                 </a>
               </h4>
               <h4>
                 <a href="https://x.com/Adil2486">
-                  <img src={instagram} width="35px" />
+                  <img src={instagram} width="35px" className="social-media-img"/>
                 </a>
               </h4>
             </div>
@@ -97,7 +97,7 @@ function App() {
                   alignItems: "center",
                 }}
               >
-                <img src={location} width="30px" />
+                <img src={location} width="30px" className="social-media-img"/>
                 <span
                   style={{
                     fontFamily: "var(--font)",
@@ -458,7 +458,7 @@ function App() {
         </div>
       </div>
       <footer className="copyright">
-        <img src={copyright} width={"30px"} />
+        <img src={copyright} width={"30px"} className="copyright-img" />
         All right are reserved - Mohammad Adil Portfolio {dates}
       </footer>
     </>

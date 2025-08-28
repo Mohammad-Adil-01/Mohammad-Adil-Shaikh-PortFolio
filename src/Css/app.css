@@ -330,3 +330,189 @@ hr {
   justify-content: center;
   gap: 10px;
 }
+
+
+/* 📱 Small devices (Mobiles) */
+@media (max-width: 576px) {
+  .container {
+    margin: 2% 2%;
+    padding: 1rem;
+  }
+
+  .title-img {
+    height: 100px;
+  }
+.profile-img {
+  position: relative;
+  content: "";
+  width: fit-content;
+}
+  .img {
+    position: relative;
+    top: -7rem;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+  }
+  .profile-container{
+    padding: 0.5rem;
+  }
+.content{
+  margin: -20% 0 0 0;
+  display: flex;
+  flex-direction: row;
+}
+  .userName {
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bluetick {
+    width: 18px;
+  }
+
+  .Follow-Btn {
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .email {
+    margin: 1% 0;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .aboutUs{
+    font-size: 1.8rem;
+  }
+  .About-description{
+    font-size: 1.1rem
+  }
+  .social-link-container{
+    gap: 20px;
+  }
+  .social-media-img{
+    margin: 15% 0;
+    width: 22px;
+  }
+ 
+  .skill-project-review-btn {
+    flex-direction: row;
+    gap: 10px;
+    align-items: stretch;
+  }
+.project,
+.skills,
+.resume,
+.contact,
+.internship {
+  font-size: 1.1rem
+}
+  .showSkill,
+  .showProject,
+  .showBackground,
+  .showInternship {
+    height: auto;
+    overflow: visible;
+  }
+
+  .skill-title,
+  .project-title,
+  .background-title,
+  .internship-title {
+    font-size: 2rem;
+  }
+
+  .web-app-title,
+  .programming-title,
+  .database-title,
+  .version-title,
+  .tools-title,
+  .fresh-cart-title,
+  .weather-title,
+  .crud-title,
+  .st-joseph-title,
+  .koral-title,
+  .Login-title,
+  .todo-title {
+    font-size: 2rem;
+  }
+
+  .web-app-dev-description,
+  .programming-development-description,
+  .database-description,
+  .version-control-description,
+  .tools-description,
+  .fresh-cart-description,
+  .weather-description,
+  .crud-description,
+  .st-joseph-description,
+  .koral-description,
+  .Login-description,
+  .todo-description {
+    font-size: 1.4rem;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .copyright-img{
+    width: 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .container {
+    margin: 2% 10%;
+    padding: 1rem;
+  }
+
+  .img {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 140px;
+  }
+
+  .userName {
+    font-size: 2.5rem;
+    justify-content: center;
+  }
+
+  .email {
+    text-align: center;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-project-review-btn {
+    justify-content: center;
+  }
+
+  .showSkill,
+  .showProject,
+  .showBackground,
+  .showInternship {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .container {
+    margin: 2% 15%;
+  }
+}
+
+@media (min-width: 1401px) {
+  .container {
+    margin: 1.5% 20%;
+  }
+}
