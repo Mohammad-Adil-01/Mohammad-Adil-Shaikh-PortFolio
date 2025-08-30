@@ -84,7 +84,7 @@ function App() {
                 </a>
               </h4>
               <h4>
-                <a href="https://x.com/Adil2486">
+                <a href="https://www.instagram.com/adil__s10">
                   <img src={instagram} width="35px" className="social-media-img"/>
                 </a>
               </h4>
