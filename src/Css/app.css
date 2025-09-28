@@ -2,6 +2,7 @@
 html {
   font-size: 10px;
   font-family: var(--font);
+  
 }
 :root {
   --font: "Poppins", sans-serif;
@@ -12,6 +13,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 .container {
   margin: 1.5% 22%;
@@ -25,7 +27,7 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 150px;
+  height: 170px;
   border-radius: 10px;
 }
 .profile-img {
@@ -36,11 +38,11 @@ html {
   display: block;
   margin: auto;
   position: absolute;
-  top: -10rem;
-  left: 3rem;
+  top: -12rem;
+  left: 4rem;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   padding: 0.5rem;
   background-color: var(--background);
@@ -56,7 +58,7 @@ html {
   flex-direction: row;
   flex-grow: 1;
   flex-wrap: wrap;
-  margin: 4% 0 0 0%;
+  margin: 6% 0 0 0%;
   gap: 20px;
   align-items: center;
 }
@@ -90,7 +92,7 @@ html {
 .email {
   font-size: 1.5rem;
   font-family: var(--font);
-  color: rgb(128, 126, 126);
+  color: rgb(28, 17, 42);
 }
 hr {
   margin: 1% 0%;
@@ -104,7 +106,7 @@ hr {
 .About-description {
   font-family: var(--font);
   font-size: 1.4rem;
-  color: #6e6e6e;
+  color: #0c040e;
 }
 .social-link-container {
   display: flex;
@@ -272,6 +274,11 @@ hr {
   border-radius: 8px;
 }
 
+.hover-btn:hover{
+  background-color: lavender;
+  transition: all 0.3s ease-in;
+  color: ghostwhite;
+}
 .fresh-cart-link,
 .TechStack-link,
 .weather-link,

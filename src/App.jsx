@@ -58,13 +58,13 @@ function App() {
           <hr />
           <h1 className="aboutUs">About</h1>
           <p className="About-description">
-            Final-year BSc IT student at GN Khalsa College with a strong focus
-            on JavaScript and .NET development, backend technologies. Passionate
-            about building secure, scalable applications with clean architecture
-            and professional design. Quick learner with solid programming
+            Final-year BSc IT student at GN Khalsa College with a strong Base in
+            Full Stack Development technologies. Passionate about building
+            secure, scalable applications with clean architecture and
+            professional design. Quick learner with solid programming
             fundamentals and a drive to contribute meaningfully to real-world
-            tech projects. Seeking an entry-level role to grow as a full stack
-            developer.
+            tech projects. Seeking an Opportunity to increase Knowledge and
+            Skills Base and Contribute to the Organization Efficiently.
           </p>
           <div className="social-link-container">
             <div className="social-media">
@@ -75,7 +75,11 @@ function App() {
               </h4>
               <h4>
                 <a href="https://www.linkedin.com/in/mohammad-adil-shaikh-166822301/">
-                  <img src={linkedIn} width="35px" className="social-media-img" />
+                  <img
+                    src={linkedIn}
+                    width="35px"
+                    className="social-media-img"
+                  />
                 </a>
               </h4>
               <h4>
@@ -85,7 +89,11 @@ function App() {
               </h4>
               <h4>
                 <a href="https://www.instagram.com/adil__s10">
-                  <img src={instagram} width="35px" className="social-media-img"/>
+                  <img
+                    src={instagram}
+                    width="35px"
+                    className="social-media-img"
+                  />
                 </a>
               </h4>
             </div>
@@ -97,7 +105,7 @@ function App() {
                   alignItems: "center",
                 }}
               >
-                <img src={location} width="30px" className="social-media-img"/>
+                <img src={location} width="30px" className="social-media-img" />
                 <span
                   style={{
                     fontFamily: "var(--font)",
@@ -140,7 +148,11 @@ function App() {
             </button>
 
             <button className="resume">
-              <a className="resume-link" href={resume} download="Adil-resume.pdf">
+              <a
+                className="resume-link"
+                href={resume}
+                download="Adil-resume.pdf"
+              >
                 Resume
               </a>
             </button>
@@ -210,7 +222,7 @@ function App() {
                     and place orders.Built using React.js , node.js , express.js
                     , jwt , MongoDB.
                   </p>
-                  <button className="fresh-cart-btn">
+                  <button className="fresh-cart-btn hover-btn">
                     <a
                       className="fresh-cart-link"
                       href="https://github.com/Mohammad-Adil-01/Fresh-Cart.com"
@@ -226,18 +238,14 @@ function App() {
                   <p className="TechStack-description">
                     TechStak is a job portal website that connects job seekers
                     with potential employers. The platform allows users to
-                    create profiles, upload resumes, and search for job
-                    listings based on various criteria such as location,
-                    industry, and job type. Employers can post job openings,
-                    review applications, and manage their recruitment process.
-                    Built Using ASP.NET , C# , SQL Server , HTML , CSS ,
-                    JavaScript.
+                    create profiles, upload resumes, and search for job listings
+                    based on various criteria such as location, industry, and
+                    job type. Employers can post job openings, review
+                    applications, and manage their recruitment process. Built
+                    Using ASP.NET , C# , SQL Server , HTML , CSS , JavaScript.
                   </p>
-                  <button className="TechStack-btn">
-                    <a
-                      className="TechStack-link"
-                      href="#"
-                    >
+                  <button className="TechStack-btn hover-btn">
+                    <a className="TechStack-link" href="#">
                       Go To Repository
                     </a>
                   </button>
@@ -252,7 +260,7 @@ function App() {
                     engaging layout, and mobile-friendly design to create a
                     strong first impression.
                   </p>
-                  <button className="koral-btn">
+                  <button className="koral-btn hover-btn">
                     <a
                       className="koral-link"
                       href="https://github.com/Mohammad-Adil-01/Koral.com"
@@ -273,7 +281,7 @@ function App() {
                     humidity, wind speed, and weather conditions. Built Using
                     React.js
                   </p>
-                  <button className="weather-btn">
+                  <button className="weather-btn hover-btn">
                     <a
                       className="weather-link"
                       href="https://github.com/Mohammad-Adil-01/Weather-Application"
@@ -291,7 +299,7 @@ function App() {
                     Delete for managing student records with a simple GUI
                     interface. Built Using Python TKinter and MongoDB
                   </p>
-                  <button className="crud-btn">
+                  <button className="crud-btn hover-btn">
                     <a
                       className="crud-link"
                       href="https://github.com/Mohammad-Adil-01/CRUD-Operation-BY-Python-MongoDB"
@@ -310,7 +318,7 @@ function App() {
                     announcements with a clean and user-friendly interface.
                     Built using HTML, CSS, JavaScript.
                   </p>
-                  <button className="st-joseph-btn">
+                  <button className="st-joseph-btn hover-btn">
                     <a
                       className="st-joseph-link"
                       href="https://github.com/Mohammad-Adil-01/StJoseph.com"
@@ -327,7 +335,7 @@ function App() {
                     Created a simple and responsive Login Page using React.js
                     with form validation and modern UI components.
                   </p>
-                  <button className="Login-btn">
+                  <button className="Login-btn hover-btn">
                     <a
                       className="Login-link"
                       href="https://github.com/Mohammad-Adil-01/loginpage"
@@ -343,7 +351,7 @@ function App() {
                     JavaScript to add, delete, and manage daily tasks with a
                     simple and interactive UI.
                   </p>
-                  <button className="todo-btn">
+                  <button className="todo-btn hover-btn">
                     <a
                       className="todo-link"
                       href="https://github.com/Mohammad-Adil-01/To-do-List"
@@ -373,7 +381,7 @@ function App() {
                     pages, ensuring mobile-first responsiveness, and optimizing
                     website performance for better user experience
                   </p>
-                  <button className="codec-btn">
+                  <button className="codec-btn hover-btn">
                     <a
                       className="codec-link"
                       href={certificate}
