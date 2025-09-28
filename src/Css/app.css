@@ -223,28 +223,31 @@ hr {
 }
 
 .fresh-cart-com,
+.TechStack-com,
 .weather-com,
 .crud-com,
 .st-joseph-com,
 .koral-com,
 .Login-com,
 .todo-com {
-  border: 2px solid green;
+  border: 2px solid rgb(13, 20, 46);
   padding: 1rem;
   border-radius: 10px;
 }
 
 .fresh-cart-title,
+.TechStack-title,
 .weather-title,
 .crud-title,
 .st-joseph-title,
 .koral-title,
 .Login-title,
 .todo-title {
-  color: #575850;
+  color: #1c122f;
   font-size: 2.5rem;
 }
 .fresh-cart-description,
+.TechStack-description,
 .weather-description,
 .crud-description,
 .st-joseph-description,
@@ -255,6 +258,7 @@ hr {
 }
 
 .fresh-cart-btn,
+.TechStack-btn,
 .weather-btn,
 .crud-btn,
 .st-joseph-btn,
@@ -269,6 +273,7 @@ hr {
 }
 
 .fresh-cart-link,
+.TechStack-link,
 .weather-link,
 .crud-link,
 .st-joseph-link,

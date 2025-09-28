@@ -219,6 +219,29 @@ function App() {
                     </a>
                   </button>
                 </div>
+                <div className="TechStack-com">
+                  <h1 className="TechStack-title">
+                    TechStak - Job-Portal Website
+                  </h1>
+                  <p className="TechStack-description">
+                    TechStak is a job portal website that connects job seekers
+                    with potential employers. The platform allows users to
+                    create profiles, upload resumes, and search for job
+                    listings based on various criteria such as location,
+                    industry, and job type. Employers can post job openings,
+                    review applications, and manage their recruitment process.
+                    Built Using ASP.NET , C# , SQL Server , HTML , CSS ,
+                    JavaScript.
+                  </p>
+                  <button className="TechStack-btn">
+                    <a
+                      className="TechStack-link"
+                      href="#"
+                    >
+                      Go To Repository
+                    </a>
+                  </button>
+                </div>
                 <div className="koral-com">
                   <h1 className="koral-title">
                     Koral.Com - (E-Commerce Web Application)
