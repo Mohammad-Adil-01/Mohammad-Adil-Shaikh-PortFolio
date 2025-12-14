@@ -118,8 +118,8 @@ hr {
 .social-media {
   display: flex;
   flex-direction: row;
-  margin: 2% 0%;
-  gap: 11px;
+  margin: 3% 0%;
+  gap: 20px;
 }
 .skill-project-review-btn {
   display: flex;

@@ -52,7 +52,7 @@ function App() {
             </button>
           </div>
           <i className="email">
-            @mohammadadil2486@gmail.com <i>+91 9833261164</i>
+            mohammadadil2486@gmail.com{" "} <i>+91 9833261164</i>
           </i>
 
           <hr />
@@ -105,11 +105,11 @@ function App() {
                   alignItems: "center",
                 }}
               >
-                <img src={location} width="30px" className="social-media-img" />
+                <img src={location} width="16px" className="social-media-img" />
                 <span
                   style={{
                     fontFamily: "var(--font)",
-                    fontSize: "2rem",
+                    fontSize: "1.8rem",
                     fontWeight: "400",
                     textDecoration: "underline",
                   }}
