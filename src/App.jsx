@@ -14,10 +14,10 @@ import certificate from "./assets/Adil-Codec-Certificate.png";
 import instagram from "./assets/instagram.png";
 import copyright from "./assets/copyright.png";
 import resume from "./Pdf/Mohammad_Adil_Resume.pdf";
+
 function App() {
   const [follow, setFollow] = useState("Follow");
   const [showContent, setshowContent] = useState("skill");
-
   const dates = new Date().getFullYear();
 
   const handleFollowclick = () => {
@@ -122,38 +122,43 @@ function App() {
           <hr />
           <div className="skill-project-review-btn">
             <button
-              className="skills"
+              className="line skills"
               onClick={() => handleShowContentClick("skill")}
             >
               Skills
+              <hr className="hover-line" />
             </button>
             <button
-              className="project"
+              className="line project"
               onClick={() => handleShowContentClick("project")}
             >
               Project
+              <hr className="hover-line" />
             </button>
             <button
-              className="internship"
+              className="line internship"
               onClick={() => handleShowContentClick("internship")}
             >
               Internships
+              <hr className="hover-line"/>
             </button>
 
             <button
-              className="contact"
+              className="line contact"
               onClick={() => handleShowContentClick("background")}
             >
               Academics
+              <hr className="hover-line"/>
             </button>
 
-            <button className="resume">
+            <button className="line resume">
               <a
                 className="resume-link"
                 href={resume}
-                download="Adil-resume.pdf"
+                download="MohammadAdil-resume.pdf"
               >
                 Resume
+                <hr className="hover-line"/>
               </a>
             </button>
           </div>

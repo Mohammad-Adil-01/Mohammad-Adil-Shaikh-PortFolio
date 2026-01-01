@@ -2,7 +2,6 @@
 html {
   font-size: 10px;
   font-family: var(--font);
-  
 }
 :root {
   --font: "Poppins", sans-serif;
@@ -13,7 +12,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 .container {
   margin: 1.5% 22%;
@@ -142,30 +140,19 @@ hr {
   transition: all 0.2s ease-in;
 }
 
-.skills:hover {
-  color: #aaaba8;
-}
-.project:hover {
-  color: #aaaba8;
-}
-
-.contact:hover {
-  color: #aaaba8;
-}
-.internship:hover {
-  color: #aaaba8;
-}
-.resume:hover {
-  color: #aaaba8;
-}
-.resume-link {
-  text-decoration: none;
-  color: rgb(6, 32, 76);
-}
+.skills:hover,
+.project:hover,
+.contact:hover,
+.internship:hover,
+.resume:hover,
 .resume-link:hover {
   color: #aaaba8;
 }
 
+.resume-link {
+  text-decoration: none;
+  color: rgb(6, 32, 76);
+}
 .showSkill,
 .showProject,
 .showBackground,
@@ -274,7 +261,7 @@ hr {
   border-radius: 8px;
 }
 
-.hover-btn:hover{
+.hover-btn:hover {
   background-color: lavender;
   transition: all 0.3s ease-in;
   color: ghostwhite;
@@ -343,7 +330,6 @@ hr {
   gap: 10px;
 }
 
-
 /* 📱 Small devices (Mobiles) */
 @media (max-width: 576px) {
   .container {
@@ -354,11 +340,11 @@ hr {
   .title-img {
     height: 100px;
   }
-.profile-img {
-  position: relative;
-  content: "";
-  width: fit-content;
-}
+  .profile-img {
+    position: relative;
+    content: "";
+    width: fit-content;
+  }
   .img {
     position: relative;
     top: -7rem;
@@ -367,14 +353,14 @@ hr {
     width: 100px;
     height: 100px;
   }
-  .profile-container{
+  .profile-container {
     padding: 0.5rem;
   }
-.content{
-  margin: -20% 0 0 0;
-  display: flex;
-  flex-direction: row;
-}
+  .content {
+    margin: -20% 0 0 0;
+    display: flex;
+    flex-direction: row;
+  }
   .userName {
     font-size: 1.5rem;
     justify-content: center;
@@ -396,32 +382,32 @@ hr {
     text-align: left;
   }
 
-  .aboutUs{
+  .aboutUs {
     font-size: 1.8rem;
   }
-  .About-description{
-    font-size: 1.1rem
+  .About-description {
+    font-size: 1.1rem;
   }
-  .social-link-container{
+  .social-link-container {
     gap: 20px;
   }
-  .social-media-img{
+  .social-media-img {
     margin: 15% 0;
     width: 22px;
   }
- 
+
   .skill-project-review-btn {
     flex-direction: row;
     gap: 10px;
     align-items: stretch;
   }
-.project,
-.skills,
-.resume,
-.contact,
-.internship {
-  font-size: 1.1rem
-}
+  .project,
+  .skills,
+  .resume,
+  .contact,
+  .internship {
+    font-size: 1.2rem;
+  }
   .showSkill,
   .showProject,
   .showBackground,
@@ -472,7 +458,7 @@ hr {
     flex-direction: row;
     gap: 5px;
   }
-  .copyright-img{
+  .copyright-img {
     width: 10px;
   }
 }
@@ -527,4 +513,25 @@ hr {
   .container {
     margin: 1.5% 20%;
   }
+}
+
+.line {
+  background: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.hover-line {
+  margin-top: 1px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.line:hover .hover-line {
+  transform: scaleX(1);
 }
