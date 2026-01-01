@@ -13,7 +13,7 @@ import internship from "./assets/internship.png";
 import certificate from "./assets/Adil-Codec-Certificate.png";
 import instagram from "./assets/instagram.png";
 import copyright from "./assets/copyright.png";
-import resume from "./Pdf/Adil-Resume.pdf";
+import resume from "./Pdf/Mohammad_Adil_Resume.pdf";
 function App() {
   const [follow, setFollow] = useState("Follow");
   const [showContent, setshowContent] = useState("skill");
