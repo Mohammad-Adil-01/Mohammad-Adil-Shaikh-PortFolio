@@ -263,8 +263,21 @@ hr {
   margin: 1% 0;
   background-color: transparent;
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   border-radius: 8px;
+  border: none;
+  background-color: rgb(206, 209, 209);
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hover-btn{
+  transition: all 0.3s ease-in;
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  gap: 5px;
 }
 
 .hover-btn:hover {
@@ -290,7 +303,7 @@ hr {
 .professional-section,
 .extra-curiculam-section,
 .language-section {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   padding: 1rem;
   border-radius: 10px;
 }

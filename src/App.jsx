@@ -13,6 +13,8 @@ import internship from "./assets/internship.png";
 import certificate from "./assets/Adil-Codec-Certificate.png";
 import instagram from "./assets/instagram.png";
 import copyright from "./assets/copyright.png";
+import repo from "./assets/repo.png";
+import demo from "./assets/demo.png";
 import resume from "./Pdf/Mohammad_Adil_Resume.pdf";
 
 function App() {
@@ -180,7 +182,7 @@ function App() {
                   <h1 className="web-app-title">Web & App Development</h1>
                   <p className="web-app-dev-description">
                     Html5 , Css [Tailwind , Bootstrap], JavaScript , ASP.NET ,
-                    React.js , Node.js , Php , Android Basic , Kotlin
+                    React.js , Node.js , Php.
                   </p>
                 </div>
                 <div className="programming-development-section">
@@ -188,7 +190,7 @@ function App() {
                     Programming & Development
                   </h1>
                   <p className="programming-development-description">
-                    C++ , Java , ASP.NET , Python , OOPs , DSA
+                    C++ , Java, kotlin , ASP.NET , Python , OOPs , DSA
                   </p>
                 </div>
                 <div className="database-section">
@@ -197,13 +199,15 @@ function App() {
                 </div>
                 <div className="version-control-section">
                   <h1 className="version-title">Version Controls</h1>
-                  <p className="version-control-description">GitHub , Git, Linux</p>
+                  <p className="version-control-description">
+                    GitHub , Git, Linux
+                  </p>
                 </div>
                 <div className="tools-section">
                   <h1 className="tools-title">Tools</h1>
                   <p className="tools-description">
                     Vs Code , Microsoft Visual Studio Code , TntelliJ IDEA ,
-                    PyCharm , Notepad
+                    PyCharm , Notepad , postman , MongoDB Compass , GitHub Desktop, Netlify , Vercel.
                   </p>
                 </div>
               </div>
@@ -239,11 +243,17 @@ function App() {
                   </p>
                   <div className="btn">
                     <a
+                      target="_blank"
                       className="fresh-cart-link"
                       href="https://github.com/Mohammad-Adil-01/Fresh-Cart.com"
                     >
                       <button className="fresh-cart-btn hover-btn">
                         Go To Repository
+                        <img
+                          src={repo}
+                          width="20px"
+                          className="repo-demo-icon"
+                        />
                       </button>
                     </a>
                     <a
@@ -253,6 +263,11 @@ function App() {
                     >
                       <button className="fresh-cart-btn hover-btn">
                         View Live Demo
+                        <img
+                          src={demo}
+                          width="20px"
+                          className="repo-demo-icon"
+                        />
                       </button>
                     </a>
                   </div>
@@ -270,14 +285,23 @@ function App() {
                     applications, and manage their recruitment process. Built
                     Using ASP.NET , C# , SQL Server , HTML , CSS , JavaScript.
                   </p>
-                  <button className="TechStack-btn hover-btn">
+                  <div className="btn">
                     <a
+                      target="_blank"
                       className="TechStack-link"
                       href="https://github.com/Mohammad-Adil-01/TechStack-Job-Portal"
                     >
-                      Go To Repository
+                      <button className="TechStack-btn hover-btn">
+                        
+                        Go To Repository
+                        <img
+                          src={repo}
+                          width="20px"
+                          className="repo-demo-icon"
+                        />
+                      </button>
                     </a>
-                  </button>
+                  </div>
                 </div>
                 <div className="koral-com">
                   <h1 className="koral-title">
@@ -289,14 +313,36 @@ function App() {
                     engaging layout, and mobile-friendly design to create a
                     strong first impression.
                   </p>
-                  <button className="koral-btn hover-btn">
+                  <div className="btn">
                     <a
+                      target="_blank"
                       className="koral-link"
                       href="https://github.com/Mohammad-Adil-01/Koral.com"
                     >
-                      Go To Repository
+                      <button className="koral-btn hover-btn">
+                        Go to Repository
+                        <img
+                          src={repo}
+                          width="20px"
+                          className="repo-demo-icon"
+                        />
+                      </button>
                     </a>
-                  </button>
+                    <a
+                      target="_blank"
+                      className="koral-link"
+                      href="https://koral-project.netlify.app/"
+                    >
+                      <button className="koral-btn hover-btn">
+                        View Live Demo
+                        <img
+                          src={demo}
+                          width="20px"
+                          className="repo-demo-icon"
+                        />
+                      </button>
+                    </a>
+                  </div>
                 </div>
                 <div className="weather-com">
                   <h1 className="weather-title">
@@ -310,14 +356,36 @@ function App() {
                     humidity, wind speed, and weather conditions. Built Using
                     React.js
                   </p>
-                  <button className="weather-btn hover-btn">
+                  <div className="btn">
                     <a
+                      target="_blank"
                       className="weather-link"
                       href="https://github.com/Mohammad-Adil-01/Weather-Application"
                     >
-                      Go To Repository
+                      <button className="weather-btn hover-btn">
+                        Go To Repository
+                        <img
+                          src={repo}
+                          width="20px"
+                          className="repo-demo-icon"
+                        />
+                      </button>
                     </a>
-                  </button>
+                    <a
+                      target="_blank"
+                      className="weather-link"
+                      href="https://weather-fetching-app-project.netlify.app/"
+                    >
+                      <button className="weather-btn hover-btn">
+                        View Live Demo
+                        <img
+                          src={demo}
+                          width="20px"
+                          className="repo-demo-icon"
+                        />
+                      </button>
+                    </a>
+                  </div>
                 </div>
                 <div className="crud-com">
                   <h1 className="crud-title">
@@ -328,14 +396,22 @@ function App() {
                     Delete for managing student records with a simple GUI
                     interface. Built Using Python TKinter and MongoDB
                   </p>
-                  <button className="crud-btn hover-btn">
+                  <div className="btn">
                     <a
+                      target="_blank"
                       className="crud-link"
                       href="https://github.com/Mohammad-Adil-01/CRUD-Operation-BY-Python-MongoDB"
                     >
-                      Go To Repository
+                      <button className="crud-btn hover-btn">
+                        Go To Repository
+                        <img
+                          src={repo}
+                          width="20px"
+                          className="repo-demo-icon"
+                        />
+                      </button>
                     </a>
-                  </button>
+                  </div>
                 </div>
                 <div className="st-joseph-com">
                   <h1 className="st-joseph-title">
@@ -347,14 +423,22 @@ function App() {
                     announcements with a clean and user-friendly interface.
                     Built using HTML, CSS, JavaScript.
                   </p>
-                  <button className="st-joseph-btn hover-btn">
+                  <div className="btn">
                     <a
+                      target="_blank"
                       className="st-joseph-link"
                       href="https://github.com/Mohammad-Adil-01/StJoseph.com"
                     >
-                      Go To Repository
+                      <button className="st-joseph-btn hover-btn">
+                        Go To Repository
+                        <img
+                          src={repo}
+                          width="20px"
+                          className="repo-demo-icon"
+                        />
+                      </button>
                     </a>
-                  </button>
+                  </div>
                 </div>
                 <div className="Login-com">
                   <h1 className="Login-title">
@@ -364,14 +448,36 @@ function App() {
                     Created a simple and responsive Login Page using React.js
                     with form validation and modern UI components.
                   </p>
-                  <button className="Login-btn hover-btn">
+                  <div className="btn">
                     <a
+                      target="_blank"
                       className="Login-link"
                       href="https://github.com/Mohammad-Adil-01/loginpage"
                     >
-                      Go To Repository
+                      <button className="Login-btn hover-btn">
+                        Go To Repository
+                        <img
+                          src={repo}
+                          width="20px"
+                          className="repo-demo-icon"
+                        />
+                      </button>
                     </a>
-                  </button>
+                    <a
+                      target="_blank"
+                      className="Login-link"
+                      href="https://frontend-loginpage.netlify.app/"
+                    >
+                      <button className="Login-btn hover-btn">
+                        View Live Demo
+                        <img
+                          src={demo}
+                          width="20px"
+                          className="repo-demo-icon"
+                        />
+                      </button>
+                    </a>
+                  </div>
                 </div>
                 <div className="todo-com">
                   <h1 className="todo-title">To-Do List (For Personal Use)</h1>
@@ -380,14 +486,22 @@ function App() {
                     JavaScript to add, delete, and manage daily tasks with a
                     simple and interactive UI.
                   </p>
-                  <button className="todo-btn hover-btn">
+                  <div className="btn">
                     <a
+                      target="_blank"
                       className="todo-link"
                       href="https://github.com/Mohammad-Adil-01/To-do-List"
                     >
-                      Go To Repository
+                      <button className="todo-btn hover-btn">
+                        Go To Repository
+                        <img
+                          src={repo}
+                          width="20px"
+                          className="repo-demo-icon"
+                        />
+                      </button>
                     </a>
-                  </button>
+                  </div>
                 </div>
               </div>
             )}
@@ -483,7 +597,7 @@ function App() {
                   <p className="extra-curiculam-description">
                     <p>
                       Volunteered At G.N. Khalsa College - IT Fest 2023 - 2024 -
-                      2025 - 2026 Contributed as Event Head in Web Designing. 
+                      2025 - 2026 Contributed as Event Head in Web Designing.
                     </p>
                     <p>
                       Volunteered in Digital Literacy & Training Program under
