@@ -52,19 +52,22 @@ function App() {
             </button>
           </div>
           <i className="email">
-            mohammadadil2486@gmail.com{" "} <i>+91 9833261164</i>
+            mohammadadil2486@gmail.com <i>+91 9833261164</i>
           </i>
 
           <hr />
           <h1 className="aboutUs">About</h1>
           <p className="About-description">
-            Final-year BSc IT student at GN Khalsa College with a strong Base in
-            Full Stack Development technologies. Passionate about building
-            secure, scalable applications with clean architecture and
-            professional design. Quick learner with solid programming
-            fundamentals and a drive to contribute meaningfully to real-world
-            tech projects. Seeking an Opportunity to increase Knowledge and
-            Skills Base and Contribute to the Organization Efficiently.
+            Recent Information Technology graduate from GN Khalsa College with a
+            proven track record in Full Stack Development and modern DevOps
+            practices. Having completed a professional internship as a Web
+            Developer, I bring hands-on experience in building secure, scalable,
+            and high-performance applications. I specialize in the MERN stack,
+            .NET ecosystem, and CI/CD workflows, maintaining a strict focus on
+            clean architecture and professional UI/UX design. I am a
+            solution-oriented developer committed to writing efficient code and
+            leveraging DevOps automation to streamline deployment and optimize
+            system reliability.
           </p>
           <div className="social-link-container">
             <div className="social-media">
@@ -140,7 +143,7 @@ function App() {
               onClick={() => handleShowContentClick("internship")}
             >
               Internships
-              <hr className="hover-line"/>
+              <hr className="hover-line" />
             </button>
 
             <button
@@ -148,17 +151,17 @@ function App() {
               onClick={() => handleShowContentClick("background")}
             >
               Academics
-              <hr className="hover-line"/>
+              <hr className="hover-line" />
             </button>
 
             <button className="line resume">
               <a
                 className="resume-link"
                 href={resume}
-                download="MohammadAdil-resume.pdf"
+                download="Mohammad_Adil_Resume.pdf"
               >
                 Resume
-                <hr className="hover-line"/>
+                <hr className="hover-line" />
               </a>
             </button>
           </div>
@@ -194,7 +197,7 @@ function App() {
                 </div>
                 <div className="version-control-section">
                   <h1 className="version-title">Version Controls</h1>
-                  <p className="version-control-description">GitHub , Git</p>
+                  <p className="version-control-description">GitHub , Git, Linux</p>
                 </div>
                 <div className="tools-section">
                   <h1 className="tools-title">Tools</h1>
@@ -220,21 +223,39 @@ function App() {
                     Fresh Cart - (E-Commerce Web Application)
                   </h1>
                   <p className="fresh-cart-description">
-                    FreshCart is a full-stack e-commerce web application
-                    designed to provide users with a seamless online shopping
-                    experience. The platform allows customers to browse
-                    products, view detailed information, add items to the cart,
-                    and place orders.Built using React.js , node.js , express.js
-                    , jwt , MongoDB.
+                    Developed FreshCart, a secure MERN-stack e-commerce
+                    ecosystem featuring a novel Dual-Channel Delivery System
+                    designed to reduce RTO costs by allowing seamless switching
+                    between home delivery and failed-delivery pickups. The
+                    platform integrates an AI-driven Chatbot for automated
+                    real-time customer support and order tracking, enhancing the
+                    overall user journey. Built with a focus on enterprise-grade
+                    security, I implemented JWT-based authentication, Bcrypt
+                    password hashing, and protected API routes to ensure robust
+                    data integrity. This project demonstrates a deep
+                    understanding of full-stack architecture, combining advanced
+                    logistics logic with professional UI/UX and secure backend
+                    management.
                   </p>
-                  <button className="fresh-cart-btn hover-btn">
+                  <div className="btn">
                     <a
                       className="fresh-cart-link"
                       href="https://github.com/Mohammad-Adil-01/Fresh-Cart.com"
                     >
-                      Go To Repository
+                      <button className="fresh-cart-btn hover-btn">
+                        Go To Repository
+                      </button>
                     </a>
-                  </button>
+                    <a
+                      target="_blank"
+                      className="fresh-cart-link"
+                      href="https://fresh-cart-com.vercel.app/"
+                    >
+                      <button className="fresh-cart-btn hover-btn">
+                        View Live Demo
+                      </button>
+                    </a>
+                  </div>
                 </div>
                 <div className="TechStack-com">
                   <h1 className="TechStack-title">
@@ -250,7 +271,10 @@ function App() {
                     Using ASP.NET , C# , SQL Server , HTML , CSS , JavaScript.
                   </p>
                   <button className="TechStack-btn hover-btn">
-                    <a className="TechStack-link" href="https://github.com/Mohammad-Adil-01/TechStack-Job-Portal">
+                    <a
+                      className="TechStack-link"
+                      href="https://github.com/Mohammad-Adil-01/TechStack-Job-Portal"
+                    >
                       Go To Repository
                     </a>
                   </button>
@@ -459,7 +483,7 @@ function App() {
                   <p className="extra-curiculam-description">
                     <p>
                       Volunteered At G.N. Khalsa College - IT Fest 2023 - 2024 -
-                      2025
+                      2025 - 2026 Contributed as Event Head in Web Designing. 
                     </p>
                     <p>
                       Volunteered in Digital Literacy & Training Program under
@@ -481,9 +505,64 @@ function App() {
           </div>
         </div>
       </div>
-      <footer className="copyright">
-        <img src={copyright} width={"30px"} className="copyright-img" />
-        All right are reserved - Mohammad Adil Portfolio {dates}
+      <footer className="footer-container">
+        <div className="footer-content">
+          {/* Brand Section / Newsletter Style Bio */}
+          <div className="footer-brand">
+            <h2 className="footer-logo">
+              Mohammad Adil. <span>DEV</span>
+            </h2>
+            <p className="footer-bio">
+              Passionate Full Stack Developer specializing in the MERN stack and
+              .NET ecosystem. Focused on building secure, scalable, and
+              user-centric digital solutions.
+            </p>
+            <div className="footer-socials">
+              <a href="https://github.com/Mohammad-Adil-01">
+                <img src={github} alt="Github" />
+              </a>
+              <a href="https://www.linkedin.com/in/mohammad-adil-shaikh-166822301/">
+                <img src={linkedIn} alt="LinkedIn" />
+              </a>
+              <a href="https://x.com/Adil2486">
+                <img src={x} alt="X" />
+              </a>
+            </div>
+          </div>
+
+          {/* Quick Links Column */}
+          <div className="footer-links">
+            <h3>Navigation</h3>
+            <ul>
+              <li onClick={() => setshowContent("skill")}>Technical Skills</li>
+              <li onClick={() => setshowContent("project")}>Latest Projects</li>
+              <li onClick={() => setshowContent("background")}>
+                Academic Profile
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info Column */}
+          <div className="footer-contact">
+            <h3>Get In Touch</h3>
+            <p>Mumbai, Maharashtra, India</p>
+            <p className="footer-email">mohammadadil2486@gmail.com</p>
+            <p>+91 9833261164</p>
+          </div>
+        </div>
+
+        <hr className="footer-divider" />
+
+        {/* Bottom Bar */}
+        <div className="footer-bottom">
+          <div className="copyright-box">
+            <img src={copyright} className="copyright-icon" alt="copyright" />
+            <span>{dates} Mohammad Adil Shaikh. All Rights Reserved.</span>
+          </div>
+          <div className="footer-status">
+            <span className="status-dot"></span> Available for Opportunities
+          </div>
+        </div>
       </footer>
     </>
   );
