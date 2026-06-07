@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../src/Css/app.css";
-import img2 from "./assets/Ma-1-logo.jpeg";
+import adilIMg from "./assets/adil-image.jpeg";
 import blueTick from "./assets/Blue-tick-Png.jpeg";
 import github from "./assets/github.png";
 import linkedIn from "./assets/linkedin.png";
@@ -39,7 +39,7 @@ function App() {
       <div className="container">
         <div className="title-img"></div>
         <div className="profile-img">
-          <img src={img2} className="img" />
+          <img src={adilIMg} className="img" />
         </div>
         <div className="profile-container">
           <div className="content">
