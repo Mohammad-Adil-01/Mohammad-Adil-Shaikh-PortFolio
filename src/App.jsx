@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import "../src/Css/app.css";
 import adilIMg from "./assets/adil-image.jpeg";
@@ -35,7 +36,11 @@ function App() {
   };
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, y: 300 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.9 }}
+    >
       <div className="container">
         <div className="title-img"></div>
         <div className="profile-img">
@@ -628,7 +633,8 @@ function App() {
               Junior Full Stack Developer specializing in the MERN stack with
               AI-assisted workflows to deliver scalable, production-ready
               solutions faster.. Focused on building secure, scalable, and
-              user-centric digital solutions with Intergating Artifical Intelligence (AI).
+              user-centric digital solutions with Intergating Artifical
+              Intelligence (AI).
             </p>
             <div className="footer-socials">
               <a href="https://github.com/Mohammad-Adil-01">
@@ -677,7 +683,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </>
+    </motion.div>
   );
 }
 
