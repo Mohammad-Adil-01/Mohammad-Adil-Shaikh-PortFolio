@@ -15,7 +15,7 @@ import instagram from "./assets/instagram.png";
 import copyright from "./assets/copyright.png";
 import repo from "./assets/repo.png";
 import demo from "./assets/demo.png";
-import resume from "./Pdf/Mohammad_Adil_Resume.pdf";
+import resume from "./Pdf/MOHAMMAD ADIL SHAIKH JUNIOR FULL STACK DEVELOPER CV.pdf";
 
 function App() {
   const [follow, setFollow] = useState("Follow");
@@ -60,16 +60,12 @@ function App() {
           <hr />
           <h1 className="aboutUs">About</h1>
           <p className="About-description">
-            Recent Information Technology graduate from GN Khalsa College with a
-            proven track record in Full Stack Development and modern DevOps
-            practices. Having completed a professional internship as a Web
-            Developer, I bring hands-on experience in building secure, scalable,
-            and high-performance applications. I specialize in the MERN stack,
-            .NET ecosystem, and CI/CD workflows, maintaining a strict focus on
-            clean architecture and professional UI/UX design. I am a
-            solution-oriented developer committed to writing efficient code and
-            leveraging DevOps automation to streamline deployment and optimize
-            system reliability.
+            Junior Full Stack Developer experienced in building and deploying
+            complete web applications using the MERN stack. Combines hands-on
+            development skills with AI-assisted workflows to deliver scalable,
+            production-ready solutions faster. Proficient in REST APIs, JWT
+            authentication, responsive UI development. Open to frontend,
+            backend, or full-stack roles.
           </p>
           <div className="social-link-container">
             <div className="social-media">
@@ -207,7 +203,8 @@ function App() {
                   <h1 className="tools-title">Tools</h1>
                   <p className="tools-description">
                     Vs Code , Microsoft Visual Studio Code , TntelliJ IDEA ,
-                    PyCharm , Notepad , postman , MongoDB Compass , GitHub Desktop, Netlify , Vercel.
+                    PyCharm , Notepad , postman , MongoDB Compass , GitHub
+                    Desktop, Netlify , Vercel.
                   </p>
                 </div>
               </div>
@@ -292,7 +289,6 @@ function App() {
                       href="https://github.com/Mohammad-Adil-01/TechStack-Job-Portal"
                     >
                       <button className="TechStack-btn hover-btn">
-                        
                         Go To Repository
                         <img
                           src={repo}
@@ -575,9 +571,9 @@ function App() {
                   <h1 className="education-title">Education Background</h1>
                   <p className="education-description">
                     <p>
-                      Bachelor Of Science in Information Technology - Degree
+                      BSc Information Technology, Mumbai, Jun 2023 – Apr 2026
                     </p>
-                    <p>CGPA : 9.00</p>
+                    <p>CGPA : 8.79</p>
                     <p>Commerce - Higher Secondary Education of Maharashtra</p>
                     <p>Percentage : 72.00 %</p>
                   </p>
@@ -597,7 +593,9 @@ function App() {
                   <p className="extra-curiculam-description">
                     <p>
                       Volunteered At G.N. Khalsa College - IT Fest 2023 - 2024 -
-                      2025 - 2026 Contributed as Event Head in Web Designing.
+                      2025 - 2026 Contributed as Event Head in Web Designing. •
+                      Team Leader — GN Khalsa IT Fest (2023–2026) | Led
+                      10-member team, managed events with 300+ attendees
                     </p>
                     <p>
                       Volunteered in Digital Literacy & Training Program under
@@ -608,7 +606,7 @@ function App() {
                 <div className="language-section">
                   <h1 className="language-title">Languages</h1>
                   <p className="language-description">
-                    <p>English - Professional</p>
+                    <p>English - Fluent</p>
                     <p>Urdu - Professional</p>
                     <p>Hindi - Intermediate</p>
                     <p>Marathi - Intermediate</p>
@@ -627,9 +625,10 @@ function App() {
               Mohammad Adil. <span>DEV</span>
             </h2>
             <p className="footer-bio">
-              Passionate Full Stack Developer specializing in the MERN stack and
-              .NET ecosystem. Focused on building secure, scalable, and
-              user-centric digital solutions.
+              Junior Full Stack Developer specializing in the MERN stack with
+              AI-assisted workflows to deliver scalable, production-ready
+              solutions faster.. Focused on building secure, scalable, and
+              user-centric digital solutions with Intergating Artifical Intelligence (AI).
             </p>
             <div className="footer-socials">
               <a href="https://github.com/Mohammad-Adil-01">
