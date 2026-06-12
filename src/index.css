@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 * {
-cursor:pointer;
+cursor:default;
 }
 .playwrite {
    /* font-family: "Playfair Display", serif; */
@@ -43,9 +43,7 @@ font-family: "DM Serif Text", serif;  font-optical-sizing: auto;
 
 
 body{
-  background-image: url("../src/assets/start.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100vh;
 }
 html{
   scroll-behavior: smooth;
