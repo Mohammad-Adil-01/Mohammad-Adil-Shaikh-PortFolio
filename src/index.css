@@ -42,9 +42,6 @@ font-family: "DM Serif Text", serif;  font-optical-sizing: auto;
 }
 
 
-body{
-  height: 100vh;
-}
 html{
   scroll-behavior: smooth;
 }

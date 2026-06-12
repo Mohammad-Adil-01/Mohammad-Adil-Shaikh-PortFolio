@@ -76,7 +76,6 @@ function Card(props) {
         </button>
       </motion.div>
 
-      {/* Responsive Performance Overlay Modal */}
       {viewPerformance && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           {viewPerformance === "graduate" && (
@@ -105,7 +104,7 @@ function Card(props) {
               link="https://nkes.in/"
               collegeLinkname="Nkes Junior College - Website Link"
               studentName="HSC Result of Student: Mohammad Adil Shaikh"
-              sem1="HSC Percentage - 72.00% Out of 100."
+              sem1="HSC Percentage - 72.00 % Out of 100."
               total="Total HSC Percentage: 72.00 / 100."
               onClose={() => setViewPerformance("")}
             />
@@ -118,7 +117,7 @@ function Card(props) {
               link="https://www.stjosephhighschoolkurlawest.com/"
               collegeLinkname="St.Joseph High School - Website Link"
               studentName="SSC Result of Student: Mohammad Adil Shaikh"
-              sem1="SSC Percentage - 60.00 / 100"
+              sem1="SSC Percentage - 60.00 % / 100"
               total="Total SSC Percentage: 60.00 / 100."
               onClose={() => setViewPerformance("")}
             />
@@ -138,7 +137,7 @@ function EducationInformation(props) {
       transition={{ duration: 0.3 }}
       className="w-full max-w-2xl p-5 md:p-6 bg-gray-300 text-black rounded-xl flex flex-col gap-4 max-h-[90vh] overflow-y-auto shadow-2xl relative"
     >
-      <div className="flex justify-end sticky top-0 bg-gray-300 py-1 z-10">
+      <div className="flex justify-end top-0 bg-gray-300 py-1 z-10">
         <button onClick={onClose} className="p-1 hover:bg-gray-400/50 rounded-full transition">
           <img src={cancel} alt="cancel Symbol" className="w-6 h-6 cursor-pointer" />
         </button>
