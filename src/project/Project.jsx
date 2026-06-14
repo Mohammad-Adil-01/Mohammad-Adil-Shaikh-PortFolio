@@ -11,7 +11,7 @@ const Project = () => {
       <motion.h1
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
         transition={{ duration: 0.5 }}
         className="text-black text-2xl md:text-4xl playwrite font-extrabold text-center tracking-wide"
       >
@@ -21,7 +21,7 @@ const Project = () => {
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
         transition={{ duration: 1 }}
         className="mt-8 md:mt-12 flex flex-wrap justify-center gap-6 md:gap-10 w-full max-w-7xl mx-auto"
       >
