@@ -15,7 +15,7 @@ const Education = () => {
         initial={{ opacity: 0, x: -300, filter: "blur(50px)" }}
         whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
         viewport={{ once: false, amount: 0.3 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
         className="mt-20 md:mt-60 playwrite h-full w-full relative px-4 md:px-10"
       >
         <motion.h2 className="my-5 text-white text-3xl md:text-4xl text-center [text-shadow:2px_3px_10px_gray]">

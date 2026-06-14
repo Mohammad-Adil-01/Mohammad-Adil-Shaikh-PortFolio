@@ -24,7 +24,7 @@ function LeftBanner() {
         initial={{ opacity: 0, filter: "blur(50px)", x: -300 }}
         whileInView={{ opacity: 1, filter: "blur(0px)", x: 0 }}
         viewport={{once:false,amount:0.4}}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
         className="h2-full-stack-developer playwrite text-2xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-white font-bold"
       >
         Full Stack Developer.
@@ -33,7 +33,7 @@ function LeftBanner() {
         initial={{ opacity: 0, x: 300, filter: "blur(50px)" }}
         whileInView={{ opacity: 1, filter: "blur(0px)", x: 0 }}
         viewport={{once:false,amount:0.4}}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
         whileHover={{ scale: 0.9 }}
         className="mt-3 p-3 playwrite text-sm md:text-base text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-400"
       >
@@ -53,7 +53,7 @@ function RightBanner() {
       initial={{ opacity: 0, x: 500, filter: "blur(50px)" }}
       whileInView={{ opacity: 1, filter: "blur(0px)", x: 0 }}
       viewport={{once:false,amount:0.4}}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
       whileHover={{ scale: 1.1 }}
     >
       <img

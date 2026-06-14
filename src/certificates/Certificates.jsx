@@ -14,7 +14,7 @@ const Certificates = () => {
       initial={{ opacity: 0, y: 30, filter: "blur(20px)" }}
       whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       viewport={{ once: false, amount: 0.2 }}
-      transition={{ duration: 1.2, ease: "easeOut" }}
+      transition={{ duration: 1, ease: "easeOut" }}
       className="text-white py-10 px-4 md:px-8 overflow-hidden flex flex-col items-center"
     >
       <h2 className="text-center text-white italic text-3xl md:text-4xl font-bold tracking-wide mb-2">
