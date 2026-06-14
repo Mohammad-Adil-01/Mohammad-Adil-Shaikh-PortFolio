@@ -7,6 +7,7 @@ import Education from "./education/Education";
 import Experience from "./experiences/Experience";
 import Certificates from "./certificates/Certificates";
 import Contact from "./contact/Contact";
+import Footer from "./footer/Footer";
 const App = () => {
   return (<>
     <Header/>
@@ -16,6 +17,7 @@ const App = () => {
     <Experience/>
     <Certificates/>
     <Contact/>
+    <Footer/>
   </>
 
   );
