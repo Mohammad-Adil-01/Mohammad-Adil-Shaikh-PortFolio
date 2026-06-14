@@ -30,12 +30,12 @@ const Contact = () => {
   whileInView={{opacity:1,y:0,filter:"blur(0px"}}
   viewport={{once:false,amount:0.3}}
   transition={{duration:1}}
-  className='flex flex-col gap-5 justify-start'>
+  className='flex flex-col gap-5'>
   <h1 className='text-white italic text-bold text-center text-3xl'>Connect with Me</h1>
     <motion.div 
       initial={{ opacity: 0, y: 20 }} 
       animate={{ opacity: 1, y: 0 }} 
-      className="mx-44 p-6 border rounded-lg shadow bg-blue-700/20"
+      className="mx-5 nm:mx-44 p-6 border rounded-lg shadow bg-blue-700/20"
     >
       <form action={fn} className="space-y-4">
         <input 
