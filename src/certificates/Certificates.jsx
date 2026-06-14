@@ -15,16 +15,15 @@ const Certificates = () => {
       whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       viewport={{ once: false, amount: 0.2 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="text-white py-10 px-4 md:px-8 overflow-hidden flex flex-col items-center"
+      className="text-black border-black py-10 px-4 md:px-8 overflow-hidden flex flex-col items-center"
     >
-      <h2 className="text-center text-white italic text-3xl md:text-4xl font-bold tracking-wide mb-2">
+      <h2 className="text-center text-black italic text-3xl md:text-4xl font-bold tracking-wide mb-2">
         Certifications
       </h2>
       
       {/* 2x2 Grid Layout Container */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full max-w-5xl border-2 border-blue-300/30 bg-blue-950/30 mx-2 my-6 p-5 md:p-10 rounded-xl shadow-2xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full max-w-5xl border-2 border-black bg-blue-950/30 mx-2 my-6 p-5 md:p-10 rounded-xl shadow-2xl">
         
-        {/* Top Left / Card 1 */}
         <div className="flex flex-col w-full h-full aspect-video md:aspect-auto">
           <SameCard
             name="Course Certificate"

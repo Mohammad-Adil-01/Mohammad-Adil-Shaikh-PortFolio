@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
-import adil from "../assets/adil-image.png";
+import adil from "../assets/adilwater.jpeg";
 import Absolute from "../absoluteImgs/Absolute";
 
 const Banner = () => {
@@ -25,7 +25,7 @@ function LeftBanner() {
         whileInView={{ opacity: 1, filter: "blur(0px)", x: 0 }}
         viewport={{once:false,amount:0.4}}
         transition={{ duration: 1 }}
-        className="h2-full-stack-developer playwrite text-2xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-white font-bold"
+        className="h2-full-stack-developer playwrite text-2xl md:text-4xl text-black font-bold"
       >
         Full Stack Developer.
       </motion.h2>
@@ -35,7 +35,7 @@ function LeftBanner() {
         viewport={{once:false,amount:0.4}}
         transition={{ duration: 1 }}
         whileHover={{ scale: 0.9 }}
-        className="mt-3 p-3 playwrite text-sm md:text-base text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-400"
+        className="mt-3 p-3 playwrite text-sm md:text-base text-black"
       >
         AI Full Stack Developer specializing in MERN Stack development.<br />
         I build modern, responsive, and secure web applications using <br />

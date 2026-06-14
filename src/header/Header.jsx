@@ -17,7 +17,7 @@ const Header = () => {
             animate={{ opacity: 1, x: 0, y: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
             whileHover={{ scale: 0.9 }}
-            className="text-lg sm:text-xl md:text-2xl linear-gradient playwrite text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-white text-center lg:text-left"
+            className="text-lg sm:text-xl md:text-2xl text-black text-center lg:text-left"
           >
             Mohammad Adil Shaikh
           </motion.h1>
@@ -27,10 +27,10 @@ const Header = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 1, ease: "easeIn" }}
-              className="flex flex-wrap justify-center lg:justify-end items-center text-white gap-3 sm:gap-4 md:gap-5"
+              className="flex flex-wrap justify-center lg:justify-end items-centertext-black gap-3 sm:gap-4 md:gap-5"
             >
               <motion.li
-                className="linear-gradient bg-clip-text text-transparent bg-gradient-to-r from-white bg-blue-500 text-xs sm:text-sm md:text-base"
+                className="text-black text-xs sm:text-sm md:text-base"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -40,7 +40,7 @@ const Header = () => {
               </motion.li>
 
               <motion.li
-                className="cursor-pointer linear-gradient bg-clip-text text-transparent bg-gradient-to-r from-white bg-blue-500 text-xs sm:text-sm md:text-base"
+                className="text-black text-xs sm:text-sm md:text-base"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -50,7 +50,7 @@ const Header = () => {
               </motion.li>
 
               <motion.li
-                className="cursor-pointer linear-gradient bg-clip-text text-transparent bg-gradient-to-r from-white bg-blue-500 text-xs sm:text-sm md:text-base"
+                className="text-black text-xs sm:text-sm md:text-base"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -60,7 +60,7 @@ const Header = () => {
               </motion.li>
 
               <motion.li
-                className="cursor-pointer linear-gradient bg-clip-text text-transparent bg-gradient-to-r from-white bg-blue-500 text-xs sm:text-sm md:text-base"
+                className="text-black text-xs sm:text-sm md:text-base"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -74,7 +74,7 @@ const Header = () => {
               </motion.li>
 
               <motion.li
-                className="cursor-pointer linear-gradient bg-clip-text text-transparent bg-gradient-to-r from-white bg-blue-500 text-xs sm:text-sm md:text-base"
+                className="text-black text-xs sm:text-sm md:text-base"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -84,7 +84,7 @@ const Header = () => {
               </motion.li>
 
               <motion.li
-                className="cursor-pointer linear-gradient bg-clip-text text-transparent bg-gradient-to-r from-white bg-blue-500 text-xs sm:text-sm md:text-base"
+                className="text-black text-xs sm:text-sm md:text-base"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >

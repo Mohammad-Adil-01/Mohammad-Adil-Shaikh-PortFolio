@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
 cursor:default;
 }
@@ -16,7 +17,7 @@ font-family: "DM Serif Text", serif;  font-optical-sizing: auto;
 
 .h2-full-stack-developer::first-letter {
   font-size: 50px;
-  color:  #76c4fc;
+  color:  black;
 }
 
 .animate{
@@ -37,8 +38,8 @@ font-family: "DM Serif Text", serif;  font-optical-sizing: auto;
   animation: rotate alternate 2s infinite;
 }
 @keyframes rotate{
-    0%   { box-shadow: 2px 2px 50px hsl(210, 46%, 62%); transition: 2; }
-  100% { box-shadow: 2px 2px 50px #34729f; transition: 2;}
+    0%   { box-shadow: 2px 2px 100px blue; transition: 2; }
+  100% { box-shadow: 2px 2px 100px #34729f; transition: 2;}
 }
 
 

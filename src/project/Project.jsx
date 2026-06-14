@@ -13,7 +13,7 @@ const Project = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.5 }}
-        className="text-white text-2xl md:text-4xl playwrite font-extrabold text-center tracking-wide"
+        className="text-black text-2xl md:text-4xl playwrite font-extrabold text-center tracking-wide"
       >
         Projects Section
       </motion.h1>
@@ -47,7 +47,7 @@ function Card({ image, title, description, link, github }) {
     <motion.div
       whileHover={{ y: -10 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="w-full max-w-sm rounded-xl border border-blue-500/20 bg-slate-900/40 p-4 md:p-5 text-white backdrop-blur-sm flex flex-col justify-between shadow-lg"
+      className="w-full max-w-sm rounded-xl border border-blue-500/100 bg-slate-900/10 p-4 md:p-5 text-black backdrop-blur-sm flex flex-col justify-between shadow-lg"
     >
       <div>
         <div className="w-full aspect-video rounded-lg overflow-hidden bg-slate-800">
@@ -62,7 +62,7 @@ function Card({ image, title, description, link, github }) {
           {title}
         </h3>
 
-        <p className="mt-2 text-sm md:text-base text-gray-300 leading-relaxed">
+        <p className="mt-2 text-sm md:text-base text-black leading-relaxed">
           {description}
         </p>
       </div>
@@ -72,7 +72,7 @@ function Card({ image, title, description, link, github }) {
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="flex-1 text-center rounded bg-blue-600 px-4 py-2.5 text-sm font-semibold transition hover:bg-blue-700"
+          className="flex-1 text-center rounded bg-blue-600/20 px-4 py-2.5 text-sm font-semibold transition hover:bg-blue-700/30"
         >
           Live Demo
         </a>

@@ -26,12 +26,12 @@ const Contact = () => {
 
   return (<motion.div 
     id="contact"
-  initial={{opacity:1 , y:500, filter:"blur(50px"}}
+  initial={{opacity:1 , y:300, filter:"blur(50px"}}
   whileInView={{opacity:1,y:0,filter:"blur(0px"}}
   viewport={{once:false,amount:0.3}}
   transition={{duration:1}}
   className='flex flex-col gap-5'>
-  <h1 className='text-white italic text-bold text-center text-3xl'>Connect with Me</h1>
+  <h1 className='text-black italic text-bold text-center text-3xl'>Connect with Me</h1>
     <motion.div 
       initial={{ opacity: 0, y: 20 }} 
       animate={{ opacity: 1, y: 0 }} 

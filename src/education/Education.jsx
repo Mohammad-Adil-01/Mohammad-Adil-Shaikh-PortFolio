@@ -18,7 +18,7 @@ const Education = () => {
         transition={{ duration: 1 }}
         className="mt-20 md:mt-60 playwrite h-full w-full relative px-4 md:px-10"
       >
-        <motion.h2 className="my-5 text-white text-3xl md:text-4xl text-center [text-shadow:2px_3px_10px_gray]">
+        <motion.h2 className="my-5 text-black text-3xl md:text-4xl text-center [text-shadow:2px_3px_10px_gray]">
           Information About Educations
         </motion.h2>
         <motion.section className="rounded-lg m-2 md:m-5 flex flex-col items-center md:flex-row md:justify-center md:items-stretch gap-6">
@@ -56,7 +56,7 @@ function Card(props) {
   };
   return (
     <>
-      <motion.div className="text-white m-2 md:m-4 p-5 [box-shadow:1px_1px_100px_#466571] bg-blue-700/10 w-full sm:max-w-md md:w-1/3 rounded-lg flex flex-col justify-between gap-5 transform transition duration-200 hover:-translate-y-2 ease-in hover:border-2 border-white">
+      <motion.div className="border-black/50 text-black m-2 md:m-4 p-5 bg-blue-700/5 w-full sm:max-w-md md:w-1/3 rounded-lg flex flex-col justify-between gap-5 transform transition duration-200 hover:-translate-y-2 ease-in hover:border-2">
         <div className="flex flex-col gap-5">
           <img
             src={props.img}
@@ -135,9 +135,9 @@ function EducationInformation(props) {
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3 }}
-      className="w-full max-w-2xl p-5 md:p-6 bg-gray-300 text-black rounded-xl flex flex-col gap-4 max-h-[90vh] overflow-y-auto shadow-2xl relative"
+      className="w-full max-w-2xl p-5 md:p-6 bg-white text-black rounded-xl flex flex-col gap-4 max-h-[90vh] overflow-y-auto shadow-2xl relative"
     >
-      <div className="flex justify-end top-0 bg-gray-300 py-1 z-10">
+      <div className="flex justify-end top-0 bg-white py-1 z-10">
         <button onClick={onClose} className="p-1 hover:bg-gray-400/50 rounded-full transition">
           <img src={cancel} alt="cancel Symbol" className="w-6 h-6 cursor-pointer" />
         </button>
