@@ -5,6 +5,7 @@ import courseCertificate from "../assets/courseCertificate.png";
 import internshipCertificate from "../assets/internshipCertificate.png";
 import udemy from "../assets/adil-udemy-certificates.jpg";
 import digitalCourse from "../assets/digitalCourseertificate.jpg";
+import festIt from "../assets/festIT.jpeg"
 
 const Certificates = () => {
   return (
@@ -66,7 +67,15 @@ const Certificates = () => {
             height="h-full"
           />
         </div>
-        
+        <div className="flex flex-col w-full h-full brightness-200 aspect-video md:aspect-auto">
+          <SameCard
+            name="IT Fest Certificate"
+            img={festIt}
+            alt="IT Fesitival Certificate"
+            width="w-full"
+            height="h-full"
+          />
+        </div>
       </div>
     </motion.section>
   );
