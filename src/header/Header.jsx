@@ -9,7 +9,7 @@ const Header = () => {
           initial={{ opacity: 0, filter: "blur(50px)", y: 250 }}
           whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 1 }}
           className="p-5 flex flex-col lg:flex-row justify-between items-center gap-5"
         >
           <motion.h1
