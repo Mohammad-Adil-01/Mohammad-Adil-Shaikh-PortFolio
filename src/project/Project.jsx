@@ -6,14 +6,14 @@ const Project = () => {
   return (
     <section
       id="projects"
-      className="py-12 md:py-20 flex flex-col items-center px-4"
+      className="py-12 md:py-20 px-4"
     >
       <motion.h1
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.5 }}
-        className="text-black text-2xl md:text-4xl playwrite font-extrabold text-center tracking-wide"
+        className="my-5 text-center text-2xl md:text-4xl font-extrabold italic text-black"
       >
         Projects Section
       </motion.h1>
@@ -23,7 +23,7 @@ const Project = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1 }}
-        className="mt-8 md:mt-12 flex flex-wrap justify-center gap-6 md:gap-10 w-full max-w-7xl mx-auto"
+        className="mx-auto flex w-full max-w-7xl flex-wrap justify-center gap-6"
       >
         {data.map((item) => (
           <Card
@@ -47,32 +47,30 @@ function Card({ image, title, description, link, github }) {
     <motion.div
       whileHover={{ y: -10 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="w-full max-w-sm rounded-xl border border-blue-500/100 bg-slate-900/10 p-4 md:p-5 text-black backdrop-blur-sm flex flex-col justify-between shadow-lg"
+      className="relative z-20 w-full max-w-sm overflow-hidden rounded-xl border-2 border-blue-500 bg-white p-5 shadow-xl"
     >
-      <div>
-        <div className="w-full aspect-video rounded-lg overflow-hidden bg-slate-800">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-          />
-        </div>
-
-        <h3 className="mt-4 text-xl md:text-2xl font-bold">
-          {title}
-        </h3>
-
-        <p className="mt-2 text-sm md:text-base text-black leading-relaxed">
-          {description}
-        </p>
+      <div className="w-full aspect-video overflow-hidden rounded-lg">
+        <img
+          src={image}
+          alt={title}
+          className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+        />
       </div>
 
-      <div className="mt-5 flex flex-col sm:flex-row gap-3 w-full">
+      <h2 className="mt-4 text-2xl font-bold text-black">
+        {title}
+      </h2>
+
+      <p className="mt-3 text-gray-700">
+        {description}
+      </p>
+
+      <div className="mt-5 flex flex-col gap-3 sm:flex-row">
         <a
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="flex-1 text-center rounded bg-blue-600/20 px-4 py-2.5 text-sm font-semibold transition hover:bg-blue-700/30"
+          className="flex-1 rounded-lg bg-blue-600 py-2 text-center font-semibold text-white transition hover:bg-blue-700"
         >
           Live Demo
         </a>
@@ -81,7 +79,7 @@ function Card({ image, title, description, link, github }) {
           href={github}
           target="_blank"
           rel="noreferrer"
-          className="flex-1 text-center rounded border border-blue-500/40 px-4 py-2.5 text-sm font-semibold transition hover:bg-blue-500/20"
+          className="flex-1 rounded-lg border border-blue-600 py-2 text-center font-semibold text-blue-600 transition hover:bg-blue-50"
         >
           GitHub
         </a>
