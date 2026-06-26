@@ -19,7 +19,7 @@ app.post("/contact", async (req, res) => {
   try {
     await transport.sendMail({
       from: "mohammadadil2486@gmail.com",
-      to: email,
+      to: email && "mohammadadil2486@gmail.com",
       subject: "Message Received",
       html: `
     <h1>Thank You for Contacting Me</h1>
