@@ -1,97 +1,170 @@
 import React from "react";
 import { motion } from "motion/react";
 
+const navItems = [
+  {
+    name: "Education",
+    href: "#education",
+  },
+  {
+    name: "Projects",
+    href: "#projects",
+  },
+  {
+    name: "Experience",
+    href: "#experience",
+  },
+  {
+    name: "Certifications",
+    href: "#certificate",
+  },
+  {
+    name: "Network",
+    href: "#network",
+  },
+];
+
 const Header = () => {
   return (
-    <>
-      <section className="w-full absolute top-0 left-0 z-50 px-4 sm:px-6 md:px-10 lg:px-20">
-        <motion.header
-          initial={{ opacity: 0, filter: "blur(15px)", y: -20 }}
-          animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="py-5 flex flex-col lg:flex-row justify-between items-center gap-4"
+    <motion.header
+      initial={{
+        opacity: 0,
+        y: -30,
+        filter: "blur(12px)",
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        filter: "blur(0px)",
+      }}
+      transition={{
+        duration: 0.8,
+        ease: "easeOut",
+      }}
+      className="fixed left-0 top-0 z-50 w-full px-4 py-4 sm:px-6 md:px-8 lg:px-12"
+    >
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
+
+        {/* Logo / Name */}
+        <motion.a
+          href="#"
+          whileHover={{
+            scale: 1.02,
+          }}
+          whileTap={{
+            scale: 0.97,
+          }}
+          className="shrink-0 rounded-full border border-black/[0.08] bg-white/80 px-4 py-2.5 text-sm font-bold tracking-tight text-black shadow-sm backdrop-blur-xl sm:px-5 sm:text-base"
         >
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            whileHover={{ scale: 1.03 }}
-            className="text-lg sm:text-xl md:text-2xl font-bold text-neutral-900 tracking-tight text-center lg:text-left selection:bg-neutral-200"
-          >
+          <span className="hidden sm:inline">
             Mohammad Adil Shaikh
-          </motion.h1>
+          </span>
 
-          <nav className="w-full lg:w-auto">
-            <motion.ul
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-wrap justify-center lg:justify-end items-center text-black gap-4 sm:gap-6 md:gap-8"
+          <span className="sm:hidden">
+            MAS
+          </span>
+        </motion.a>
+
+        {/* Navigation */}
+        <nav className="hidden md:block">
+          <motion.ul
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {},
+              visible: {
+                transition: {
+                  staggerChildren: 0.07,
+                  delayChildren: 0.2,
+                },
+              },
+            }}
+            className="flex items-center gap-1 rounded-full border border-black/[0.08] bg-white/75 p-1.5 shadow-sm backdrop-blur-xl"
+          >
+            {navItems.map((item) => (
+              <motion.li
+                key={item.name}
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                    y: -10,
+                  },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                  },
+                }}
+              >
+                <a
+                  href={item.href}
+                  className="group relative block rounded-full px-3 py-2 text-xs font-medium text-gray-600 transition-all duration-300 hover:bg-black/[0.05] hover:text-black lg:px-4 lg:text-sm"
+                >
+                  {item.name}
+
+                  {/* Hover Line */}
+                  <span className="absolute bottom-1 left-1/2 h-px w-0 -translate-x-1/2 bg-black transition-all duration-300 group-hover:w-1/2" />
+                </a>
+              </motion.li>
+            ))}
+          </motion.ul>
+        </nav>
+
+        {/* Contact Button */}
+        <motion.a
+          href="#contact"
+          whileHover={{
+            scale: 1.04,
+          }}
+          whileTap={{
+            scale: 0.96,
+          }}
+          className="hidden items-center gap-2 rounded-full bg-black px-4 py-2.5 text-xs font-semibold text-white shadow-lg shadow-black/10 transition-all duration-300 hover:bg-gray-800 sm:flex sm:px-5 sm:text-sm"
+        >
+          Contact
+          <span className="text-sm">↗</span>
+        </motion.a>
+
+        {/* Mobile Contact */}
+        <motion.a
+          href="#contact"
+          whileTap={{
+            scale: 0.94,
+          }}
+          className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-sm text-white shadow-lg shadow-black/10 sm:hidden"
+        >
+          ↗
+        </motion.a>
+      </div>
+
+      {/* Mobile Navigation */}
+      <motion.nav
+        initial={{
+          opacity: 0,
+          y: -10,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          delay: 0.4,
+          duration: 0.5,
+        }}
+        className="mt-3 flex justify-center md:hidden"
+      >
+        <div className="flex max-w-full items-center gap-1 overflow-x-auto rounded-full border border-black/[0.08] bg-white/80 p-1.5 shadow-sm backdrop-blur-xl scrollbar-hide">
+          {navItems.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              className="shrink-0 rounded-full px-3 py-2 text-[11px] font-medium text-gray-600 transition-all duration-300 hover:bg-black/[0.05] hover:text-black"
             >
-              <motion.li
-                className="text-neutral-800 font-medium text-xs sm:text-sm md:text-base hover:text-black transition-colors"
-                whileHover={{ scale: 1.08 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <a href="#education" className="cursor-pointer py-1 block">
-                  Education
-                </a>
-              </motion.li>
-
-              <motion.li
-                className="text-neutral-800 font-medium text-xs sm:text-sm md:text-base hover:text-black transition-colors"
-                whileHover={{ scale: 1.08 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <a href="#projects" className="cursor-pointer py-1 block">
-                  Projects
-                </a>
-              </motion.li>
-
-              <motion.li
-                className="text-neutral-800 font-medium text-xs sm:text-sm md:text-base hover:text-black transition-colors"
-                whileHover={{ scale: 1.08 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <a href="#experience" className="cursor-pointer py-1 block">
-                  Experience
-                </a>
-              </motion.li>
-
-              <motion.li
-                className="text-neutral-800 font-medium text-xs sm:text-sm md:text-base hover:text-black transition-colors"
-                whileHover={{ scale: 1.08 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <a href="#certificate" className="cursor-pointer py-1 block">
-                  Certifications
-                </a>
-              </motion.li>
-
-              <motion.li
-                className="text-neutral-800 font-medium text-xs sm:text-sm md:text-base hover:text-black transition-colors"
-                whileHover={{ scale: 1.08 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <a href="#network" className="cursor-pointer py-1 block">
-                  Network
-                </a>
-              </motion.li>
-
-              <motion.li
-                className="text-neutral-800 font-medium text-xs sm:text-sm md:text-base hover:text-black transition-colors"
-                whileHover={{ scale: 1.08 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <a href="#contact" className="cursor-pointer py-1 block">
-                  Contact
-                </a>
-              </motion.li>
-            </motion.ul>
-          </nav>
-        </motion.header>
-      </section>
-    </>
+              {item.name}
+            </a>
+          ))}
+        </div>
+      </motion.nav>
+    </motion.header>
   );
 };
 

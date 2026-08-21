@@ -6,35 +6,95 @@ const Project = () => {
   return (
     <section
       id="projects"
-      className="py-12 md:py-20 px-4"
+      className="relative w-full overflow-hidden bg-white px-4 py-20 text-black sm:px-8 md:px-12 lg:px-20"
     >
-      <motion.h1
-        initial={{ opacity: 0, y: 60 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.5 }}
-        className="my-5 text-center text-2xl md:text-4xl font-extrabold italic text-black"
-      >
-        Projects Section
-      </motion.h1>
+      {/* Background Decorations */}
+      <div className="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-blue-100/40 blur-3xl" />
 
+      <div className="pointer-events-none absolute -right-40 bottom-20 h-80 w-80 rounded-full bg-purple-100/40 blur-3xl" />
+
+      {/* Header */}
+      <div className="relative z-10 mx-auto mb-12 max-w-3xl text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-4 inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/[0.03] px-4 py-2 text-sm font-medium text-gray-600 backdrop-blur-sm"
+        >
+          <span className="h-2 w-2 rounded-full bg-black" />
+          Selected Work
+        </motion.div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.7,
+            ease: "easeOut",
+          }}
+          className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl"
+        >
+          Projects
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 0.7,
+            delay: 0.1,
+          }}
+          className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-gray-500 md:text-base"
+        >
+          A selection of projects I've built while exploring modern frontend
+          technologies, full-stack development, and real-world problem solving.
+        </motion.p>
+      </div>
+
+      {/* Projects Grid */}
       <motion.div
-        initial={{ opacity: 0, y: 60 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 1 }}
-        className="mx-auto flex w-full max-w-7xl flex-wrap justify-center gap-6"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{
+          once: true,
+          amount: 0.1,
+        }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.12,
+            },
+          },
+        }}
+        className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3"
       >
-        {data.map((item) => (
-          <Card
+        {data.map((item, index) => (
+          <ProjectCard
             key={item.title}
-            image={item.image}
-            title={item.title}
-            description={item.description}
-            link={item.liveDemo}
-            github={item.github}
+            project={item}
+            index={index}
           />
         ))}
+      </motion.div>
+
+      {/* Bottom */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.7,
+          delay: 0.5,
+        }}
+        className="relative z-10 mt-12 text-center"
+      >
+        <p className="text-sm text-gray-400">
+          More projects coming soon.
+        </p>
       </motion.div>
     </section>
   );
@@ -42,48 +102,120 @@ const Project = () => {
 
 export default Project;
 
-function Card({ image, title, description, link, github }) {
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
+function ProjectCard({ project, index }) {
   return (
-    <motion.div
-      whileHover={{ y: -10 }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="relative z-20 w-full max-w-sm overflow-hidden rounded-xl border-2 border-blue-500 bg-white p-5 shadow-xl"
+    <motion.article
+      variants={{
+        hidden: {
+          opacity: 0,
+          y: 40,
+        },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.6,
+            ease: "easeOut",
+          },
+        },
+      }}
+      whileHover={{
+        y: -8,
+      }}
+      transition={{
+        duration: 0.3,
+      }}
+      className="group relative overflow-hidden rounded-3xl border border-black/[0.08] bg-white p-3 shadow-[0_10px_45px_rgba(0,0,0,0.06)] transition-shadow duration-500 hover:shadow-[0_20px_65px_rgba(0,0,0,0.12)]"
     >
-      <div className="w-full aspect-video overflow-hidden rounded-lg">
-        <img
-          src={image}
-          alt={title}
-          className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+      {/* Project Image */}
+      <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-gray-100">
+        <motion.img
+          src={project.image}
+          alt={project.title}
+          className="h-full w-full object-cover"
+          whileHover={{
+            scale: 1.06,
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeOut",
+          }}
         />
+
+        {/* Image Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-80" />
+
+        {/* Number */}
+        <div className="absolute left-4 top-4 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-black/70 text-xs font-semibold text-white backdrop-blur-md">
+          {String(index + 1).padStart(2, "0")}
+        </div>
+
+        {/* Project Type */}
+        <div className="absolute bottom-4 left-4 rounded-full border border-white/20 bg-white/90 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-gray-800 backdrop-blur-md">
+          Featured Project
+        </div>
       </div>
 
-      <h2 className="mt-4 text-2xl font-bold text-black">
-        {title}
-      </h2>
+      {/* Content */}
+      <div className="px-3 pb-3 pt-5">
 
-      <p className="mt-3 text-gray-700">
-        {description}
-      </p>
+        {/* Title */}
+        <h2 className="text-xl font-bold tracking-tight text-gray-900 md:text-2xl">
+          {project.title}
+        </h2>
 
-      <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-        <a
-          href={link}
-          target="_blank"
-          rel="noreferrer"
-          className="flex-1 rounded-lg bg-blue-600 py-2 text-center font-semibold text-white transition hover:bg-blue-700"
-        >
-          Live Demo
-        </a>
+        {/* Description */}
+        <p className="mt-3 line-clamp-3 text-sm leading-6 text-gray-500">
+          {project.description}
+        </p>
 
-        <a
-          href={github}
-          target="_blank"
-          rel="noreferrer"
-          className="flex-1 rounded-lg border border-blue-600 py-2 text-center font-semibold text-blue-600 transition hover:bg-blue-50"
-        >
-          GitHub
-        </a>
+        {/* Divider */}
+        <div className="my-5 h-px bg-black/[0.07]" />
+
+        {/* Actions */}
+        <div className="flex gap-2">
+
+          {/* Live Demo */}
+          <motion.a
+            href={project.liveDemo}
+            target="_blank"
+            rel="noreferrer"
+            whileHover={{
+              scale: 1.02,
+            }}
+            whileTap={{
+              scale: 0.97,
+            }}
+            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-black px-4 py-3 text-xs font-semibold text-white transition-all duration-300 hover:bg-gray-800"
+          >
+            Live Demo
+            <span className="text-sm">↗</span>
+          </motion.a>
+
+          {/* GitHub */}
+          <motion.a
+            href={project.github}
+            target="_blank"
+            rel="noreferrer"
+            whileHover={{
+              scale: 1.02,
+            }}
+            whileTap={{
+              scale: 0.97,
+            }}
+            className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-black/[0.08] bg-gray-50 px-4 py-3 text-xs font-semibold text-gray-800 transition-all duration-300 hover:border-black/15 hover:bg-gray-100"
+          >
+            GitHub
+            <span className="text-sm">↗</span>
+          </motion.a>
+
+        </div>
       </div>
-    </motion.div>
+    </motion.article>
   );
 }

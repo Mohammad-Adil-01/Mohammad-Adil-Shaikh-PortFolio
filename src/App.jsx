@@ -9,6 +9,7 @@ import Certificates from "./certificates/Certificates";
 import Contact from "./contact/Contact";
 import Footer from "./footer/Footer";
 import adil from "./assets/water3adil.jpeg";
+import Network from "./network/Network";
 const App = () => {
 
     const bannerStyle = {
@@ -28,6 +29,7 @@ const App = () => {
       <Experience />
       <Certificates />
       <Contact />
+      <Network />
       <Footer />
     </>
   );
