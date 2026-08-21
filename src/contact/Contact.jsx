@@ -9,7 +9,7 @@ async function handleClick(prevState, formData) {
   const message = formData.get("message");
 
   try {
-    const res = await axios.post("http://localhost:5000/contact", {
+    const res = await axios.post("https://mohammad-adil-shaikh-portfolio.onrender.com/contact", {
       name,
       email,
       message,
