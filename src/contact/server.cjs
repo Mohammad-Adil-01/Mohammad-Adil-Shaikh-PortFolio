@@ -13,6 +13,15 @@ const transport = nodemail.createTransport({
   },
 });
 
+app.get("/", (req, res) => {
+  res.send("Contact API is running");
+});
+
+// Test contact endpoint in browser
+app.get("/contact", (req, res) => {
+  res.send("Contact API is running");
+});
+
 app.post("/contact", async (req, res) => {
   const { name, email, message } = req.body;
 
