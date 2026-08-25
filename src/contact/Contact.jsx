@@ -4,8 +4,6 @@ import { useActionState } from "react";
 import axios from "axios";
 
 
-const PRODUCTION_URL = import.meta.env.VITE_BASE_API_URL
-
 async function handleClick(prevState, formData) {
   const name = formData.get("name");
   const email = formData.get("email");
@@ -14,7 +12,7 @@ async function handleClick(prevState, formData) {
   console.log(`${import.meta.env.VITE_BASE_API_URL}`);
   console.log(`${import.meta.env.VITE_BASE_API_URL}`);
   try {
-    const res = await axios.post(`${PRODUCTION_URL}/contact`, {
+    const res = await axios.post(`${import.meta.env.VITE_BASE_API_URL}/contact`, {
       name,
       email,
       message,
@@ -27,7 +25,7 @@ async function handleClick(prevState, formData) {
   } catch (err) {
     return {
       success: false,
-      message: "Unable to send your message. Please try again.",
+      message: "Unable to send your message. Please try again.",err,
     };
   }
 }
