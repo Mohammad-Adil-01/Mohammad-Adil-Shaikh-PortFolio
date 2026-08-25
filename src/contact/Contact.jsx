@@ -3,13 +3,18 @@ import { motion } from "motion/react";
 import { useActionState } from "react";
 import axios from "axios";
 
+
+const PRODUCTION_URL = import.meta.env.VITE_BASE_API_URL
+
 async function handleClick(prevState, formData) {
   const name = formData.get("name");
   const email = formData.get("email");
   const message = formData.get("message");
 
+  console.log(`${import.meta.env.VITE_BASE_API_URL}`);
+  console.log(`${import.meta.env.VITE_BASE_API_URL}`);
   try {
-    const res = await axios.post("https://mohammad-adil-shaikh-portfolio.onrender.com/contact", {
+    const res = await axios.post(`${PRODUCTION_URL}/contact`, {
       name,
       email,
       message,

@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 
 // Test contact endpoint in browser
 app.get("/contact", (req, res) => {
-  res.send("Contact API is running");
+  res.send("Contact API is running ------>");
 });
 
 app.post("/contact", async (req, res) => {
